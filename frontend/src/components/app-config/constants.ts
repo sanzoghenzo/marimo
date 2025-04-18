@@ -25,3 +25,11 @@ export const KNOWN_AI_MODELS = [
   "o1-mini",
   "o1-preview",
 ] as const;
+
+export const KNOWN_AI_PROVIDERS = [
+  "open_ai",
+  "anthropic",
+  "google",
+  "groq",
+  "azure",
+] as const;

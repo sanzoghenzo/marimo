@@ -223,16 +223,20 @@ class AiConfig(TypedDict, total=False):
 
     - `rules`: custom rules to include in all AI completion prompts
     - `max_tokens`: the maximum number of tokens to use in AI completions
+    - `provider_type`: the type of the provider to use from the configured ones
     - `open_ai`: the OpenAI config
     - `anthropic`: the Anthropic config
     - `google`: the Google AI config
+    - `azure`: the Azure OpenAI config
     """
 
     rules: NotRequired[str]
     max_tokens: NotRequired[int]
+    provider_type: NotRequired[str]
     open_ai: OpenAiConfig
     anthropic: AnthropicConfig
     google: GoogleAiConfig
+    azure: OpenAiConfig
 
 
 @dataclass
